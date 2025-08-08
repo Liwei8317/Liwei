@@ -1,0 +1,116 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.3s ease-in-out;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+  z-index: 10;
+}
+
+.header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 2em;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.container {
+  color: rgb(0, 0, 0);
+  font-family: Roboto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.content {
+  background: transparent;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 700px;
+  color: white;
+}
+
+.content h2, .content h3 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+span {
+  font-size: 0.9vw;
+  transform: translate(0%, 0%);
+  max-width: 50%;
+}
+
+#text2 {
+  position: absolute;
+  font-size: 1vw;
+  z-index: 2;
+  transform: translate(-80%, -500%);
+  max-width: 30%;
+  border-style: groove;
+  color: white;
+  opacity: 0.4;
+}
+
+video {
+  width: 80%;
+}
+
+
+.float-right {
+  float: right;
+  margin: 0 0 10px 10px;
+  max-width: 50%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+  span {
+    max-width: 100%;
+    font-size: 2vw;
+  }
+  #text {
+    font-size: 2vw;
+  }
+}
+
+#myVideo {
+  width: 500px;
+  height: 280px;
+  border: 4px solid #007bff;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  display: block;
+  margin: 40px auto;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+#myVideo:hover {
+  filter: grayscale(0%);
+}
